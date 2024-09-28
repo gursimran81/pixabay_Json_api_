@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <style>
+        .bg{background: url('volcano.jpg');
+        background-size: cover; background-position: center;}
+        .bg>div{background-color: rgba(171,219,227,0.4);}
+    </style>
+</head>
+<body>
+    
+    <div class="bg">
+        <div class="text-center py-5">
+            <h1 class="display-4 mt-5">Search Image</h1>
+            <p class="fs-4 ">Enter Keyword To Search Image</p>
+            <div class="container px-5 pb-5">
+                <form class="px-5">
+                    <div class="input-group">
+                        <input type="text" id="query" class="form-control" placeholder="Enter Keyword">
+                        <button class="btn btn-dark px-3" onclick="getImages(event)">Search Images</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <main class="container py-4">
+        <div class="row " id="imgresult"> </div>
+    </main>
+    
+</body>
+</html>
